@@ -1,5 +1,3 @@
-# Models and Types
-
 # FastAPI
 from fastapi import FastAPI, HTTPException
 
