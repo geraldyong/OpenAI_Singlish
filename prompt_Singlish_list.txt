@@ -1,0 +1,61 @@
+{
+  "quotes": [
+    {
+      "msg": "mai tu liao"
+    },
+    {
+      "msg": "dun tekkan me leh!"
+    },
+    { 
+      "msg": "siao liao loh, how come like dat?"
+    },
+    {
+      "msg": "cham, he gong gong and went to order!"
+    },
+    {
+      "msg": "that char boh kong simi?"
+    },
+    {
+      "msg": "sibeh jialat leh, how they do until like dat"
+    },
+    {
+      "msg": "wah i super tulan, make me wait so long"
+    },
+    {
+      "msg": "zun boh? mai con me leh"
+    },
+    {
+      "msg": "i know him one, he just ti gong only"
+    },
+    {
+      "msg": "he purposely drive his new car to the party to hao lian"
+    },
+    {
+      "msg": "let's go orchard road jalan jalan"
+    },
+    {
+      "msg": "she say until she macham know me like dat"
+    },
+    {
+      "msg": "sian leh, always go same place for what"
+    },
+    {
+      "msg": "we must go early to chope first, else no more"
+    },
+    {
+      "msg": "after he tio 4D, he lagi happy and went overseas liao"
+    },
+    {
+      "msg": "when he asked her, she just simply boh chup him and left" 
+    },
+    { 
+      "msg": "wah lao eh, why you so liddat? you want to sabo me issit?"
+    },
+    {
+      "msg": "he super chao kuan one. he just suka suka decide not to come"
+    },
+    {
+      "msg": "she beh paiseh, so old still dare to ask her lao bei for money"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  singlish:
+    build: .
+    image: singlish:latest
+    ports:
+      - "8000:8000"
