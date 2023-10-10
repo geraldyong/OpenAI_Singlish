@@ -11,14 +11,18 @@ This repository contains code to create a microservice that takes in Singlish me
 ## Steps to Run Microservice
 
 1. Install the required libraries.
-   `pip install -r requirements.txt`
+   ```
+   pip install -r requirements.txt
+   ```
 2. Export your OpenAI keys as environment variables.
    ```
    export OPENAI_API_KEY=xxxx
    export OPENAI_API_KEY=yyyy
    ``` 
 3. Start up the microservice.
-   `uvicorn singlish_ms:app --reload`
+   ```
+   uvicorn singlish_ms:app --reload
+   ```
 4. Load up the browser to point to the link that was listed.
 5. Access the /docs endpoint.
 
@@ -26,6 +30,14 @@ This repository contains code to create a microservice that takes in Singlish me
 ## Steps to Package As Docker Image
 
 1. Build the docker image.
-   `docker build -t singlish:latest .`
+   ```
+   docker build -t singlish:latest .
+   ```
 2. Bring up the docker serivce.
-   `docker compose up -d`
+   ```
+   docker compose up -d
+   ```
+3. Check that the container is up.
+   ```
+   docker ps -a | grep singlish
+   ```
