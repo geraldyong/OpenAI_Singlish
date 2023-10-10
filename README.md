@@ -24,7 +24,7 @@ This repository contains code to create a microservice that takes in Singlish me
    uvicorn singlish_ms:app --reload
    ```
 4. Load up the browser to point to the link that was listed.
-5. Access the /docs endpoint.
+5. Access the `/docs` endpoint.
 
 
 ## Steps to Package As Docker Image
