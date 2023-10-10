@@ -6,8 +6,6 @@ This repository contains code to create a microservice that takes in Singlish me
 
 * You will need to have an OpenAI API account, with available usage tokens.
 * You will also need an API Key, which you can create from https://platform.openai.com/account/api-keys
-  Save the key in the folder that you have pulled this repository to, into a file:
-  e.g. `echo "bk_myapikeyxxxxxxxx" | base64 > GeraldYong_APIKey_Google_encoded.txt` 
 * Python 3.11 with libraries FastAPI, Pydantic (see requirements.txt)
 
 ## Steps to Run Microservice
@@ -15,6 +13,10 @@ This repository contains code to create a microservice that takes in Singlish me
 1. Install the required libraries.
    `pip install -r requirements.txt`
 2. Export your OpenAI keys as environment variables.
+   ```
+   export OPENAI_API_KEY=xxxx
+   export OPENAI_API_KEY=yyyy
+   ``` 
 3. Start up the microservice.
    `uvicorn singlish_ms:app --reload`
 4. Load up the browser to point to the link that was listed.
