@@ -1,5 +1,5 @@
 import os
-import openai
+from openai import OpenAI
 import re
 
 # ---------------------------------------------------------------
@@ -32,16 +32,17 @@ def check_ending_brace(s: str) -> str:
     return s if s.endswith('}') else s + '}'
 
 
-# OpenAI 
-openai.api_key = os.getenv('OPENAI_API_KEY')
-openai.organization = os.getenv('OPENAI_ORGANIZATION_ID')
+# OpenAI
+client = OpenAI(
+  api_key = os.getenv('OPENAI_API_KEY'),
+)
 
 def explain_singlish(prompt, max_tokens, llm_model = "gpt-3.5-turbo-instruct"):
     # Takes a prompt that contains a Singlish message and explain what it means.
-    response = openai.Completion.create(
-        engine = llm_model,
-        prompt=prompt,
-        max_tokens = max_tokens
+    response = client.completions.create(
+        model = llm_model,
+        max_tokens = max_tokens,
+        prompt = prompt
     )
 
     return eval(check_ending_brace(remove_extra_spaces(strip_pretext(response.choices[0].text.strip()))))
